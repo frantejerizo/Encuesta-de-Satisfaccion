@@ -1,6 +1,6 @@
 const respuestas = [8, 5, 10, 7, 6, 8, 9, 10, 7, 4, 6, 3, 7, 8, 6, 5, 4, 2, 9, 10];
 
-const tamañoArray = 10; // Define el tamaño del array
+const tamañoArray = 11; // Define el tamaño del array
 const calificacionRepetida = new Array(tamañoArray).fill(0); // Asigno el valor 0 a todos los elementos del array
 
 let suma = 0, prom, satisfechos = 0, insatisfechos = 0, notaMasRepetida = 0, nota = 0;
@@ -16,6 +16,7 @@ for (i = 0; i < respuestas.length; i++)
   if (respuestas[i] <= 4) {
     insatisfechos++;
   }
+  
   calificacionRepetida[respuestas[i]] = calificacionRepetida[respuestas[i]] + 1;
 }
 
